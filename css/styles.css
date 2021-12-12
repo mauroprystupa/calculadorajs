@@ -1,0 +1,62 @@
+*{box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+html{
+    font-family: 'Georama', sans-serif;
+    font-size: 62.5%;
+}
+.contenedor {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
+}
+.calculadora{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    font-size: 2rem;
+    border: 1px solid gray;
+}
+.display{
+    padding: 25px 15px;
+    width: 100%;
+    text-align: right;
+    overflow-x: auto ;
+
+}
+.teclado{
+    display: flex;
+    width: 100%;
+
+}
+.tecladoNumero{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+.numeros{
+    width: 25%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color:white;
+    border: 1px solid gray;
+}
+.numeros:hover {
+    filter: brightness(80%);
+    transition: .25s;
+}
+.numeros.amarillo{
+    background-color: yellow;
+}
+.numeros.large{
+    width: 50%;
+}
+.numeros.negro{
+    background-color: lightgrey;
+}
